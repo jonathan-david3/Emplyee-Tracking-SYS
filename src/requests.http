@@ -1,0 +1,20 @@
+### Add a new employee
+POST http://localhost:8080/employees
+Authorization: Basic YWRtaW46YWRtaW4xMjM=
+Content-Type: application/json
+
+{
+  "name": "John Doe",
+  "department": "IT",
+  "designation": "Developer"
+}
+
+### Mark attendance
+POST http://localhost:8080/attendance/mark?employeeId=1&status=Present
+
+### Get employee attendance
+GET http://localhost:8080/attendance/employee/1
+
+### Get all employees
+GET http://localhost:8080/employees
+Authorization: Basic YWRtaW46YWRtaW4xMjM=
